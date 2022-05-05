@@ -1,0 +1,27 @@
+<br>
+<br>
+<div class="launch-card">
+    <div class="card">
+        <div class="card-body">
+          
+            <h3>{{data.mission_name}}</h3>
+           
+            <button (click)="toggleTag()" *ngIf="!showMe">Show</button>
+                <div [ngClass]="showMe ? 'show' : 'hide'" class="menu-content" >
+                    <ul>
+                        <li *ngIf="showMe">
+                         
+                            <p>Name: <strong>{{data.rocket.rocket_name}}</strong></p>
+                            <p>Launch Year: <strong>{{data.launch_year}}</strong></p>
+                            <p>Launch flight_number: <strong>{{data.flight_number}}</strong></p>
+                        </li>
+                        <li *ngIf="showMe">
+                            
+                            <p>{{data.details}}</p>
+                        </li>
+                    </ul>
+                </div>
+            <button (click)="toggleTag()" *ngIf="showMe">Hide</button>
+        </div>
+    </div>
+</div>

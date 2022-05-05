@@ -1,0 +1,124 @@
+button {
+    background-color: #1d314b;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    transition: 0.5s;
+}
+button:hover {
+    background-color: #696d74;
+    transition: 0.5s;
+}
+.menu-content {
+    position: relative;
+    top: 0px;
+    transition: all 0.7s ease;
+  }
+.hide {
+    top: 10vw;
+    transition: 0.7s;
+}
+img {
+    max-width: 100%;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+p {
+    font-size: small;
+    text-align: justify;
+}
+.filter-header-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-header-wrap a {
+    cursor: pointer;
+    color: #000;
+    margin-top: 22px;
+    margin-right: 20px;
+}
+.filter-header-wrap h3 {
+    margin: 20px;
+}
+
+.card-body {
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    padding-top: 0.5em;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 2em;
+}
+
+.filter-section-wrapper h4 {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.filter-sub-title {
+    position: relative;
+}
+
+.filter-sub-title h4::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    bottom: -8px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 72%;
+    background: #bdb7b9;
+}
+
+.filter-buttons {
+    list-style: none outside;
+    margin: 0;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.filter-buttons li {
+    margin-top: 10px;
+    flex-basis: 35%;
+    background: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    width: 36%;
+    display: inline-block;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all ease 0.2s;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+
+.filter-buttons li:hover {
+    color: #fff;
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+.filter-buttons li.active {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+.loading-text {
+    color: #fff;
+    font-size: 20px;
+}
