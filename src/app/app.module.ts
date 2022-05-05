@@ -4,8 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LaunchDetailComponent } from './launch-detail/alunch-detail.component';
-import { LunchProgramsComponent } from './launch-programs/launch-programs.component';
+import { LaunchDetailComponent } from './components/launch-detail/alunch-detail.component';
+import { LunchProgramsComponent } from './components/launch-programs/launch-programs.component';
 
 @NgModule({
   declarations: [

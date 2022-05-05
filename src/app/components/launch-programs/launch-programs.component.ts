@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LaunchesService } from '../services/launches.service';
+import { LaunchesService } from '../../services/launches.service';
 
 @Component({
   selector: 'app-launch-programs',
