@@ -16,10 +16,11 @@ export class CapsulesService {
   constructor(private http: HttpClient) { }
 
   public getCapsules():Observable<any> {
-    return this.http.get<any>(CAPSULES_API, httpOptions);
+    const test = this.http.get<any>(CAPSULES_API, httpOptions);
+    return test;
   }
 
-  public getOneCapsule(capsule_serial:number):Observable<any> {
+  public getOneCapsule(capsule_serial:String):Observable<any> {
     return this.http.get<any>(CAPSULES_API+'/'+capsule_serial, httpOptions);
   }
 
