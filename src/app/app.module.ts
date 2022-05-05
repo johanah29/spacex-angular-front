@@ -4,8 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ListCapsuleComponent } from './component/list-capsule/list-capsule.component';
-import { CapsuleComponent } from './component/capsule/capsule.component';
+import { ListCapsuleComponent } from './components/list-capsule/list-capsule.component';
+import { CapsuleComponent } from './components/capsule/capsule.component';
 
 @NgModule({
   declarations: [
