@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CapsuleComponent } from './component/capsule/capsule.component';
-import { ListCapsuleComponent } from './component/list-capsule/list-capsule.component';
+import { CapsuleComponent } from './components/capsule/capsule.component';
+import { ListCapsuleComponent } from './components/list-capsule/list-capsule.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', component: ListCapsuleComponent },
