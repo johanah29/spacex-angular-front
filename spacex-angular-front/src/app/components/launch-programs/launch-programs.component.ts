@@ -6,7 +6,7 @@ import { LaunchesService } from '../../services/launches.service';
   templateUrl: './launch-programs.component.html',
   styleUrls: ['./launch-programs.component.css']
 })
-export class LunchProgramsComponent implements OnInit {
+export class LaunchProgramsComponent implements OnInit {
 
   launchDataArray = [];
   isLoading = false;
