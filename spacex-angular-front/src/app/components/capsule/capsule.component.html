@@ -1,1 +1,16 @@
-<p *ngIf="capsule">capsule: {{capsule.capsule_serial}}</p>
+<div *ngIf="capsule">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">{{ capsule.capsule_serial }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{ capsule.type }}</h6>
+            <p class="card-text">{{ capsule.details }}</p>
+
+            <h4 style="text-align: center; margin-top: 24px">Lancements avec la capsules</h4>
+            <div *ngFor="let launch of launches">
+                <h5>flight id: {{ launch.flight_number }}</h5>
+                <h5>Date du lancement: {{ launch.launch_date_local | date: 'dd LLL y H\'h\'mm' }}</h5>
+                <p>{{ launch.details }}</p>
+            </div>
+        </div>
+    </div>
+</div>
