@@ -1,4 +1,3 @@
 # Project by Johanah LEKEU, Abakar ABDELSALAM, Alexis Fonteneau
 
-To Use the project:
-Run `docker-compose up` to open the project
+To Use the project, run `docker-compose up`
