@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { CapsulesService } from 'src/app/services/capsules.service';
-import { LaunchesService } from 'src/app/services/launches.service';
+import { CapsulesService } from '../../services/capsules.service';
+import { LaunchesService } from '../../services/launches.service';
 
 @Component({
   selector: 'app-capsule',
