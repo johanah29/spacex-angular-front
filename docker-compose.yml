@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+
+  front:
+    image: node:16.13
+    command: >
+      sh -c "echo 'install all dependencies from package.json' &&
+             npm install &&
+             npm install -g @angular/cli@latest &&
+             echo 'start server' &&
+             ng serve --open --port 4200 --host 0.0.0.0 --disable-host-check"
+    working_dir: /home/node/app
+    volumes:
+      - ./spacex-angular-front:/home/node/app
+    ports:
+      - 4200:4200
