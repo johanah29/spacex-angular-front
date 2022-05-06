@@ -1,18 +1,8 @@
-<br>
-<div class="container">
-    <div class="row">
-        <div class="col-md-12"> 
-            <h1 class="my-3">SpaceX Programmes de lancement</h1>
-        </div>
-        <br>
-        <br>
-        <div class="col-md-12">
-            <p *ngIf="isLoading" class="loading-text">Veuillez patienter pendant le chargement des données...</p>
-            <div *ngIf="!isLoading" class="row">
-                <div *ngFor ="let item of launchDataArray" class="col-md-4">
-                    <app-launch-detail [data]="item"></app-launch-detail>
-                </div>
-            </div>
+<div class="col-md-12">
+    <p *ngIf="isLoading" class="loading-text">Veuillez patienter pendant le chargement des données...</p>
+    <div *ngIf="!isLoading" class="row">
+        <div *ngFor ="let item of launchDataArray" class="col-md-4">
+            <app-launch-detail [data]="item"></app-launch-detail>
         </div>
     </div>
 </div>
