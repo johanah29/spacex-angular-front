@@ -1,22 +1,22 @@
 <br>
 <br>
+<br>
 <div class="launch-card">
     <div class="card">
         <div class="card-body">
-          
             <h3>{{data.mission_name}}</h3>
-           
             <button (click)="toggleTag()" *ngIf="!showMe">Show</button>
                 <div [ngClass]="showMe ? 'show' : 'hide'" class="menu-content" >
                     <ul>
                         <li *ngIf="showMe">
-                         
+                            <p>Flight_number: <strong>{{data.flight_number}}</strong></p>
                             <p>Name: <strong>{{data.rocket.rocket_name}}</strong></p>
-                            <p>Launch Year: <strong>{{data.launch_year}}</strong></p>
-                            <p>Launch flight_number: <strong>{{data.flight_number}}</strong></p>
+                            <p>Year: <strong>{{data.launch_year}}</strong></p>
                         </li>
-                        <li *ngIf="showMe">
-                            
+                        <span *ngIf="showMe">
+                        <img src="{{data.links.mission_patch_small}}">
+                        </span>
+                        <li *ngIf="showMe">    
                             <p>{{data.details}}</p>
                         </li>
                     </ul>
