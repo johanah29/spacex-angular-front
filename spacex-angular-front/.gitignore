@@ -45,5 +45,5 @@ testem.log
 Thumbs.db
 
 # Docker-compose folders
-../front/
-../spacex/
+./front
+./spacex

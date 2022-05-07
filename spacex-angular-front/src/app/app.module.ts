@@ -8,6 +8,7 @@ import { LaunchDetailComponent } from './components/launch-detail/alunch-detail.
 import { LaunchProgramsComponent } from './components/launch-programs/launch-programs.component';
 import { ListCapsuleComponent } from './components/list-capsule/list-capsule.component';
 import { CapsuleComponent } from './components/capsule/capsule.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CapsuleComponent } from './components/capsule/capsule.component';
     LaunchDetailComponent,
     LaunchProgramsComponent,
     ListCapsuleComponent,
-    CapsuleComponent
+    CapsuleComponent,
+    HomePageComponent
   ],
   imports: [
     AppRoutingModule,
